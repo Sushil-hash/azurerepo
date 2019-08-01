@@ -1,0 +1,35 @@
+{
+	"name": "SourceDataset_tmn",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "source",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10,
+				"scale": 255
+			},
+			{
+				"name": "Fname",
+				"type": "varchar",
+				"precision": 255,
+				"scale": 255
+			},
+			{
+				"name": "Lname",
+				"type": "varchar",
+				"precision": 255,
+				"scale": 255
+			}
+		],
+		"typeProperties": {
+			"tableName": "[dbo].[demotab]"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
